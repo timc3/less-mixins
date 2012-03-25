@@ -1,0 +1,54 @@
+/* Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ */
+.mixin-transition(@element, @duration:0.2s, @ease:ease-out) {
+  -webkit-transition: @element @duration @ease;
+  -moz-transition: @element @duration @ease;
+  -o-transition: @element @duration @ease;
+  transition: @element @duration @ease;
+}
+/* Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ */
+.mixin-transition-complicated(@args) {
+  -webkit-transition: @args;
+  -moz-transition: @args;
+  -o-transition: @args;
+  transition: @args;
+}
+/* Firefox 3.6+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+.mixin-rotate(@deg:90deg){
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+/* Firefox 3.6, Firefox 4+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+.mixin-rounded(@radius:4px) {
+  -webkit-border-radius: @radius;
+  -bordermoz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+/* Firefox 3.6+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+.mixin-transform-origin(@x-origin:50%, @y-origin:50%) {
+-moz-transform-origin:@x-origin, @y-originrigin;
+-webkit-transform-origin:@x-origin, @y-origin;
+-o-transform-originriginigin:@x-origin, @y-origin;
+-ms-transform-origin:@x-origin, @y-origin;
+    transform-origin:@x-origin, @y-origin;
+}
+/* Firefox 3.6, Firefox 4+, Safari 5, Safari 5.1+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+.mixin-box-shadow(@args) {
+  -webkit-box-shadow: @args;
+  -moz-box-shadow: @args;
+  box-shadow: @args;
+}
+/* Firefox 3.6+, Safari 5,Safari 5.1+, Chrome 10+, Opera 11+ */
+.mixin-gradient(@color: #efefef, @start: #eee, @stop: #fff) {
+  background: @color;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom, @start, @stop);
+  background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+}
+.mixin-b-gradient(@color: #efefef, @start: 0, @stop: 255) {
+  background: @color;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(@start,@start,@start)), color-stop(1, rgb(@stop,@stop,@stop)));
+  background: -ms-linear-gradient(bottom, rgb(@start,@start,@start) 0%, rgb(@start,@start,@start) 100%);
+  background: -moz-linear-gradient(center bottom, rgb(@start,@start,@start) 0%, rgb(@stop,@stop,@stop) 100%);
+}
