@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Less-mixins by timc3</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/timc3/less-mixins">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/timc3/less-mixins/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/timc3/less-mixins/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Less-mixins</h1>
+          <p>A number of mixins to make life easier with LessCSS</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/timc3">timc3</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>Welcome to Less Mixins.</h3>
+
+<p>This is a collection of mixins that I use often with different projects.
+Each one tries to by cross-browser friendly.</p>
+
+<h3>Usage</h3>
+
+<p>Usage is actually rather simple, you need to include the contents of less_mixin.less in to your project.</p>
+
+<ol>
+<li>Download / Clone this project.</li>
+<li>Copy less_mixin.less into the same directory as the rest of your .less files</li>
+<li>
+<code>@import "less_mixin";</code> near the head of you main .less file.</li>
+<li>
+<p>When you wish to use one of the mixins just include it in the declaration of the CSS block:</p>
+
+<p>.roundedbox {
+    border: 1px solid black;
+    z-index: 999;
+    .mixin-rounded(8px);
+}</p>
+</li>
+</ol><p>The above just added rounded corners with a radius of 8px to any element with the class roundedbox applied to it.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>Maintained by <a href="/timc3" class="user-mention">@timc3</a></p>
+
+<h3>Lots of thanks to</h3>
+
+<ul>
+<li><a href="http://lesscss.org/">http://lesscss.org/</a></li>
+<li><a href="http://www.css3files.com/">http://www.css3files.com/</a></li>
+</ul><h3>Support or Contact</h3>
+
+<p>Having trouble? Post an issue to the GitHub issue page.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
