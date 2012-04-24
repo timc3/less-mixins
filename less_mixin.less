@@ -1,24 +1,39 @@
-/* Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ */
+/* 
+CSS3 Transistion mixin for elements
+Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ 
+*/
 .mixin-transition(@element, @duration:0.2s, @ease:ease-out) {
   -webkit-transition: @element @duration @ease;
   -moz-transition: @element @duration @ease;
   -o-transition: @element @duration @ease;
   transition: @element @duration @ease;
 }
-/* Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ */
+
+/*
+CSS3 Transistion mixin for elements that allows more complicated syntax
+Firefox 4+, Safari 5+, Chrome 10+, Opera 11+ 
+*/
 .mixin-transition-complicated(@args) {
   -webkit-transition: @args;
   -moz-transition: @args;
   -o-transition: @args;
   transition: @args;
 }
-/* Firefox 3.6+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+
+/* 
+Rotate css node.
+Firefox 3.6+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+
+*/
 .mixin-rotate(@deg:90deg){
   -webkit-transform: rotate(@deg);
   -moz-transform: rotate(@deg);
   transform: rotate(@deg);
 }
-/* Firefox 3.6, Firefox 4+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ */
+
+/* 
+Rounded borders
+Firefox 3.6, Firefox 4+, Safari 5+, Chrome 10+, Internet Explorer 9+, Opera 11+ 
+*/
 .mixin-rounded(@radius:4px) {
   -webkit-border-radius: @radius;
   -bordermoz-border-radius: @radius;
@@ -46,9 +61,25 @@
   background: -ms-linear-gradient(bottom, @start, @stop);
   background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
 }
+/* 
+Firefox 3.6+, Safari 5,Safari 5.1+, Chrome 10+, Opera 11+ 
+*/
 .mixin-b-gradient(@color: #efefef, @start: 0, @stop: 255) {
   background: @color;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(@start,@start,@start)), color-stop(1, rgb(@stop,@stop,@stop)));
   background: -ms-linear-gradient(bottom, rgb(@start,@start,@start) 0%, rgb(@start,@start,@start) 100%);
   background: -moz-linear-gradient(center bottom, rgb(@start,@start,@start) 0%, rgb(@stop,@stop,@stop) 100%);
+}
+
+/* 
+Stop users being able to select elements
+Firefox 3.6+, Safari 5,Safari 5.1+, Chrome 10+, Opera 11+, IOS
+*/
+.mixin-stop-select(){
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
