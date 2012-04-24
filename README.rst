@@ -1,7 +1,12 @@
+------------
+Less Mixins
+------------
+
+
 Introduction:
 -------------
 
-This is a collection of mixins that I use when developing applications
+This is a collection of mixins for Less that I use when developing applications
 and sites mainly to help with vendor specific prefixes.
 
 Usage:
@@ -18,3 +23,9 @@ Props:
 ------
 
 http://www.css3files.com/
+
+
+License:
+---------
+
+No license
