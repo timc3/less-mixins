@@ -83,3 +83,13 @@ Firefox 3.6+, Safari 5,Safari 5.1+, Chrome 10+, Opera 11+, IOS
   -ms-user-select: none;
   user-select: none;
 }
+
+/* 
+Define box sizing
+Firefox (any), Safari 3 +,  Opera 8.5+, IE8+, Chrome 4+, IOS. http://caniuse.com/css3-boxsizing
+*/
+.mixin-box-sizing(@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing:    @type;
+    box-sizing:         @type;
+}
